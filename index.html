@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html ng-app='' xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Mad Libs</title>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.5/angular.min.js"></script>
+</head>
+
+<body>
+
+<center><div style="position:relative; height:201px; width:661px">
+<img src="images/mad-lib-happy-face.png" /><img src="images/ng-mad-libs-logo.png" alt="" style="margin-bottom:85px" /><div style="margin-top:116px margin-left:201px"></div>
+</div></center>
+
+<h2>Provide the following words: </h2>
+<table>
+<tr>
+<td>
+<h3>Adjectives</h3>
+</td>
+<td>
+<h3>Nouns</h3
+></td>
+<td>
+<h3>Plural Nouns</h3>
+</td>
+<td>
+<h3>Verb Ending in "ing"</h3>
+</td>
+<td>
+<h3>Game / Plant / Body Part / Number</h3>
+</td>
+</tr>
+<tr>
+<td style="width:19%">
+
+<input type="text" ng-model="adjective1"/>
+<input type="text" ng-model="adjective2"/>
+<input type="text" ng-model="adjective3"/>
+</td>
+<td style="width:19%">
+<input type="text" ng-model="noun1"/>
+<input type="text" ng-model="noun2"/>
+<input type="text" ng-model="noun3"/>
+</td>
+<td style="width:19%">
+<input type="text" ng-model="pluralNoun1"/>
+<input type="text" ng-model="pluralNoun2"/>
+<input type="text" ng-model="pluralNoun3"/>
+<input type="text" ng-model="pluralNoun4"/>
+</td>
+<td style="width:19%">
+<input type="text" ng-model="INGverb1"/>
+<input type="text" ng-model="INGverb2"/>
+<input type="text" ng-model="INGverb3"/>
+<input type="text" ng-model="INGverb4"/>
+</td>
+<td style="width:19%">
+<input type="text" ng-model="game1"/>
+<input type="text" ng-model="plant1"/>
+<input type="text" ng-model="bodyPart1"/>
+<input type="text" ng-model="number1"/>
+</td>
+
+</tr>
+</table>
+
+<hr style="height:2px"/>
+
+<h2>Let's see if that worked</h2>
+
+<p> A vacation is when you take a trip to some {{adjective1}} place with your {{adjective2}} family. Usually you to to some place that is near a/an {{noun1}} or up on a/an {{noun2}}. A good vacation place is one where you can ride {{pluralNoun1}} or play {{game1}} or go hunting for {{pluralNoun2}}. I like to spend my time {{INGverb1}} or {{INGverb2}}. When parents go on a vacation, they spend thier time eating three {{pluralNoun3}} a day, and fathers play gold, and mothers sit around {{INGverb3}}. Last summer, my little brother fell in a/an {{noun3}} and got poison {{plant1}} all over his {{bodyPart1}}. My family is going to go to (the) {{place1}}, and I will practive {{INGverb4}}. Parents need vacations more than kids because parents are always very {{adjective3}} and because they have to work {{number1}} hours every day all year making enough {{pluralNoun4}} to pay for the vacation.</p>
+
+</body>
+</html>
