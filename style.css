@@ -2,9 +2,7 @@
     {
         display:  table;
         width:auto;
-        border:1px solid  #666666;
-        border-spacing:5px;/*cellspacing:poor IE support for  this*/
-       /* border-collapse:separate;*/
+        border-spacing:5px;
     }
 
     .divRow
@@ -16,8 +14,13 @@
 
     .divCell
     {
-        float:left;/*fix for  buggy browsers*/
+        float:left;
         display:table-column;
         width:200px;
 
     }
+	.story
+	{
+		width:1000px;
+		float:left;
+	}

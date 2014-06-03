@@ -7,91 +7,63 @@
 <link rel="stylesheet" href="style.css">
 </head>
 
-<body ng-init="row1=['adjective1','noun1','pluralNoun1','INGverb1','game1']">
+<body>
 
-<center><div style="position:relative; height:201px; width:661px">
-<img src="images/mad-lib-happy-face.png" /><img src="images/ng-mad-libs-logo.png" alt="" style="margin-bottom:85px" /><div style="margin-top:116px margin-left:201px"></div>
-
-</div></center>
-
-<h2>Provide the following words: </h2>
+<center>
 <div class="divTable">
-             <div class="headRow" ng-init="wordTypes=['Adjectives','Nouns','Plural Nouns','Verb Ending in ing','Game / Plant / Body Part / Number']">
+             <div class="divRow">
+             <div class="divCell">&nbsp;</div>
+             <div class="divCell"><img src="images/mad-lib-happy-face.png" /></div>
+             <div class="divCell"><img src="images/ng-mad-libs-logo.png" alt="" style="margin-bottom:85px" /><br>
+				<h1 style="margin-top:-70px; width:400px">Automate This!</h1></div>
+             
+             </div>
+             
+             <div class="divRow">
+                <h2 style="float:left">Provide the following words: </h2>
+             </div>
+             
+             <div class="divRow" ng-init="wordTypes=['Adjectives','Nouns','Plural Nouns','Verb Ending in ing','Game / Plant / Body Part / Number']">
                 <div ng-repeat="text in wordTypes" class="divCell" align="center">{{text}}</div>
              </div>
-            <div class="divRow" >
-                  <div ng-repeat="word in row1" class="divCell"><input type="text" ng-model="word" placeholder="same"/></div>
+            <div class="divRow">
+                  <div class="divCell"><input type="text" ng-model="adjective1" placeholder="Adjective"/></div>
+                  <div class="divCell"><input type="text" ng-model="noun1" placeholder="Noun"/></div>
+                  <div class="divCell"><input type="text" ng-model="pluralNoun1" placeholder="Plural Noun"/></div>
+                  <div class="divCell"><input type="text" ng-model="INGverb1" placeholder="Verb ending in 'ing'"/></div>
+                  <div class="divCell"><input type="text" ng-model="game1" placeholder="Game"/></div>
             </div>
             <div class="divRow">
-                <div class="divCell">xxx</div>
-                <div class="divCell">yyy</div>
-                <div class="divCell">www</div>
-           </div>
+                  <div class="divCell"><input type="text" ng-model="adjective2" placeholder="Adjective"/></div>
+                  <div class="divCell"><input type="text" ng-model="noun2" placeholder="Noun"/></div>
+                  <div class="divCell"><input type="text" ng-model="pluralNoun2" placeholder="Plural Noun"/></div>
+                  <div class="divCell"><input type="text" ng-model="INGverb2" placeholder="Verb ending in 'ing'"/></div>
+                  <div class="divCell"><input type="text" ng-model="plant1" placeholder="Plant"/></div>
+            </div>
             <div class="divRow">
-                <div class="divCell">ttt</div>
-                <div class="divCell">uuu</div>
-                <div class="divCell">Mkkk</div>
-           </div>
+                  <div class="divCell"><input type="text" ng-model="adjective3" placeholder="Adjective"/></div>
+                  <div class="divCell"><input type="text" ng-model="noun3" placeholder="Noun"/></div>
+                  <div class="divCell"><input type="text" ng-model="pluralNoun3" placeholder="Plural Noun"/></div>
+                  <div class="divCell"><input type="text" ng-model="INGverb3" placeholder="Verb ending in 'ing'"/></div>
+                  <div class="divCell"><input type="text" ng-model="bodyPart1" placeholder="Body Part"/></div>
+            </div>
+            <div class="divRow">
+                  <div class="divCell">&nbsp;</div>
+                  <div class="divCell">&nbsp;</div>
+                  <div class="divCell"><input type="text" ng-model="pluralNoun4" placeholder="Plural Noun"/></div>
+                  <div class="divCell"><input type="text" ng-model="INGverb4" placeholder="Verb ending in 'ing'"/></div>
+                  <div class="divCell"><input type="text" ng-model="number1" placeholder="Number"/></div>
+            </div>
+            <div class="divRow">
+                <hr style="height:2px"/>
+            </div>
+            <div class="divRow">
+                <div class="story" style="float:left">A vacation is when you take a trip to some {{adjective1}} place with you {{adjective2}} family. Usually you go to some place that is near a/an {{noun1}}. A good vacation place is one where you can ride {{pluralNoun1}} or play {{game1}} or go hunting for {{pluralNoun2}}. I like to spend my time {{INGverb1}} or {{INGverb2}}. When parents go on a vacation, they spend thier time eating three {{pluralNoun3}} a day, and fathers play gold, and mothers sit around {{INGverb3}}. Last summer, my little brother fell in a/an {{noun3}} and got poison {{plant1}} all over his {{bodyPart1}}. My family is going to go to (the) {{place1}}, and I will practive {{INGverb4}}. Parents need vacations more than kids because parents are always very {{adjective3}} and because they have to work {{number1}} hours every day all year making enough {{pluralNoun4}} to pay for the vacation.</div>
+            </div>
 
       </div>
-
-<table>
-<tr>
-<td>
-<h3>Adjectives</h3>
-</td>
-<td>
-<h3>Nouns</h3
-></td>
-<td>
-<h3>Plural Nouns</h3>
-</td>
-<td>
-<h3>Verb Ending in "ing"</h3>
-</td>
-<td>
-<h3>Game / Plant / Body Part / Number</h3>
-</td>
-</tr>
-<tr>
-<td style="width:19%">
-
-<input type="text" ng-model="adjective1"/>
-<input type="text" ng-model="adjective2"/>
-<input type="text" ng-model="adjective3"/>
-</td>
-<td style="width:19%">
-<input type="text" ng-model="noun1"/>
-<input type="text" ng-model="noun2"/>
-<input type="text" ng-model="noun3"/>
-</td>
-<td style="width:19%">
-<input type="text" ng-model="pluralNoun1"/>
-<input type="text" ng-model="pluralNoun2"/>
-<input type="text" ng-model="pluralNoun3"/>
-<input type="text" ng-model="pluralNoun4"/>
-</td>
-<td style="width:19%">
-<input type="text" ng-model="INGverb1"/>
-<input type="text" ng-model="INGverb2"/>
-<input type="text" ng-model="INGverb3"/>
-<input type="text" ng-model="INGverb4"/>
-</td>
-<td style="width:19%">
-<input type="text" ng-model="game1"/>
-<input type="text" ng-model="plant1"/>
-<input type="text" ng-model="bodyPart1"/>
-<input type="text" ng-model="number1"/>
-</td>
-
-</tr>
-</table>
-
-<hr style="height:2px"/>
-
-<h2>Let's see if that worked</h2>
-
-<p> A vacation is when you take a trip to some {{adjective1}} place with your {{adjective2}} family. Usually you to to some place that is near a/an {{noun1}} or up on a/an {{noun2}}. A good vacation place is one where you can ride {{pluralNoun1}} or play {{game1}} or go hunting for {{pluralNoun2}}. I like to spend my time {{INGverb1}} or {{INGverb2}}. When parents go on a vacation, they spend thier time eating three {{pluralNoun3}} a day, and fathers play gold, and mothers sit around {{INGverb3}}. Last summer, my little brother fell in a/an {{noun3}} and got poison {{plant1}} all over his {{bodyPart1}}. My family is going to go to (the) {{place1}}, and I will practive {{INGverb4}}. Parents need vacations more than kids because parents are always very {{adjective3}} and because they have to work {{number1}} hours every day all year making enough {{pluralNoun4}} to pay for the vacation.</p>
+      
+      </center>
 
 </body>
 </html>
