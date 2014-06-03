@@ -1,18 +1,40 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html ng-app='' xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE HTML>
+<html ng-app=''>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Mad Libs</title>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.5/angular.min.js"></script>
+<link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body ng-init="row1=['adjective1','noun1','pluralNoun1','INGverb1','game1']">
 
 <center><div style="position:relative; height:201px; width:661px">
 <img src="images/mad-lib-happy-face.png" /><img src="images/ng-mad-libs-logo.png" alt="" style="margin-bottom:85px" /><div style="margin-top:116px margin-left:201px"></div>
+
 </div></center>
 
 <h2>Provide the following words: </h2>
+<div class="divTable">
+             <div class="headRow" ng-init="wordTypes=['Adjectives','Nouns','Plural Nouns','Verb Ending in ing','Game / Plant / Body Part / Number']">
+                <div ng-repeat="text in wordTypes" class="divCell" align="center">{{text}}</div>
+             </div>
+            <div class="divRow" >
+                  <div ng-repeat="word in row1" class="divCell"><input type="text" ng-model="word" placeholder="same"/></div>
+            </div>
+            <div class="divRow">
+                <div class="divCell">xxx</div>
+                <div class="divCell">yyy</div>
+                <div class="divCell">www</div>
+           </div>
+            <div class="divRow">
+                <div class="divCell">ttt</div>
+                <div class="divCell">uuu</div>
+                <div class="divCell">Mkkk</div>
+           </div>
+
+      </div>
+
 <table>
 <tr>
 <td>
